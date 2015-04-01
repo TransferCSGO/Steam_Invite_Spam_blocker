@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="SteamInviteSpamFilter.exe" version="1.0.0.0" publicKeyToken="6efdc6a18392aecc" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="sisf.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="SteamInviteSpamFilter" version="0.0.1.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="SteamInviteSpamFilter.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HtmlAgilityPack.dll" size="134656">
+      <assemblyIdentity name="HtmlAgilityPack" version="1.4.9.0" publicKeyToken="BD319B19EAF3B43A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>XH0MTgrjsVol/leRhjvTnBR0ve6f+u6XugfywnkOGxM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SteamInviteSpamFilter.exe" size="542136">
+      <assemblyIdentity name="SteamInviteSpamFilter" version="0.0.1.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>l3iX8s/nxF+k4du5s4bZBMpH2A5qx7uaVAzPQcZHJKM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="sisf.ico" size="99678">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>owTswgcpzqtkH091vdKH0PcnLKXpkic9DYWl+/f7jKY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SteamInviteSpamFilter.exe.config" size="1876">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>s7/MUNcQFl8RD8/oGY1bzCWeo6YixyqydP6GllTAuOI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. 
+      Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows Vista, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"></supportedOS>-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+      <!-- If your application is designed to work with Windows 8, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"></supportedOS>-->
+      <!-- If your application is designed to work with Windows 8.1, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=Luke\Luke's PC" issuerKeyHash="e94b6f9543cb1b65d660691c0d9d87838f63257d" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>kkD0df7tV35foO80UN6UN2QSUCi3sCX3SoD0588IgHk=</DigestValue></Reference></SignedInfo><SignatureValue>FYBzkMGhygmV2hDrSkzujQGXKvT7z9o2b9crse/rZrkcOuzNkHe47uprfB74v1xDuMuaxT3ZKF3C213JsSh6s4ibExJclzniDAmMrU1mJvUTC9d5KM+PYKoriPsyIxWHAqzMdBbiPO/f1Fyb5GlefU3YUL6b+rcVgD3pL3wclAs=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>l16J5VzQb268u+/xZsr8IKjo5L3hOWgtnwfdANuozibv5NJ9IGV0jtiz0+PMj9bS/QkKqyhxUSROdxJ8AhM1tDeRyzV6DsvLv5UJMQya0piaZICd+T/Gg1Tf5xQVMXGjS+sklGd/UFnYWfrhoVYbgHz9MO45NZ59EKPt4HWo5gs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="798008cfe7f4804af725b0b7285012643794de5034efa05f7e57edfe75f44092" Description="" Url=""><as:assemblyIdentity name="SteamInviteSpamFilter.exe" version="1.0.0.0" publicKeyToken="6efdc6a18392aecc" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Luke\Luke's PC</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>vGiazQD0sAqjXB2M+QYhLG5ry/aNgW+aMohyXFT95rE=</DigestValue></Reference></SignedInfo><SignatureValue>BRkIGk/0Ryi9J81mZUquIzxLsZG4EGWDG9F0fhDW4xouvJ9+Wdp2K2HfXWeCtsQ+iguGiCnP11AWeBd6snVkT37KsWxVHjldbQjBQ9srdEOt45wKPqmTbbhOhBcrMI220OACNwYQAXDgJQqzonwq/XtmzDYmDwBrptBPk/EO+qc=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>l16J5VzQb268u+/xZsr8IKjo5L3hOWgtnwfdANuozibv5NJ9IGV0jtiz0+PMj9bS/QkKqyhxUSROdxJ8AhM1tDeRyzV6DsvLv5UJMQya0piaZICd+T/Gg1Tf5xQVMXGjS+sklGd/UFnYWfrhoVYbgHz9MO45NZ59EKPt4HWo5gs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQLLN6r5JN979JlWNIC6wYAzANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQDHhwATAB1AGsAZQBcAEwAdQBrAGUAJwBzACAAUABDMB4XDTE1MDQwMTE4MjcyMFoXDTE2MDQwMTAwMjcyMFowJzElMCMGA1UEAx4cAEwAdQBrAGUAXABMAHUAawBlACcAcwAgAFAAQzCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAl16J5VzQb268u+/xZsr8IKjo5L3hOWgtnwfdANuozibv5NJ9IGV0jtiz0+PMj9bS/QkKqyhxUSROdxJ8AhM1tDeRyzV6DsvLv5UJMQya0piaZICd+T/Gg1Tf5xQVMXGjS+sklGd/UFnYWfrhoVYbgHz9MO45NZ59EKPt4HWo5gsCAwEAATANBgkqhkiG9w0BAQsFAAOBgQBbXygVh9tC2oKEWthjLRjvTUhoimHfXGYrjIMSpNfydwQwPv7AnotPLfuhc155kwOwLA3WcGCUEaA63Hs0RYcWTKufflfg/wHPqCR9YReLkL9C01qG1HlJFJw+DehO6rrbbJ4CI7+SvH6dGPeJ27YiHHzZgu8PsrCdfblUQ3pOSw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
